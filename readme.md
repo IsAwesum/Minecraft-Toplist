@@ -13,8 +13,10 @@ Simple Minecraft toplist written using [Laravel](http://laravel.com)
 
 ##TODO##
 - One server per user
+- Voting
 - Use Eloquent's eager loading
-- Fix assets
+- Premium server support
+- Clean up assets
 - Pagination
 - User registering
 - Votifier
