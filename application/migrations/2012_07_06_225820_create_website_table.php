@@ -19,7 +19,6 @@ class Create_Website_Table {
 			$table->integer('owner');
 			$table->integer('votes');
 			$table->integer('premium');
-			$table->string('type');
 			$table->timestamps();
 		});
 	}
