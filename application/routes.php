@@ -44,24 +44,11 @@ Route::get('servers/(:any)', function($id)
 	return View::make('pages.server')->with('data', $data);
 });
 
-Route::get('hash', function()
-{
-
-	$hash = Hash::make('demo');
-	return $hash;
-});
-
 Route::get('servers', function()
 {
 
 	$data = Website::order_by('votes', 'desc')->get();
 	return View::make('pages.servers')->with('data', $data);
-});
-
-Route::get('info', function()
-{
-	$data = Website::order_by('votes', 'desc')->get();
-	return View::make('pages.info')->with('data', $data);
 });
 
 /*
