@@ -4,6 +4,7 @@ Simple Minecraft toplist written using [Laravel](http://laravel.com)
 - Server status (online/offline)
 - Players online
 - Simple user system
+- Server information using Markdown
 
 
 ##Libraries used##
@@ -12,10 +13,10 @@ Simple Minecraft toplist written using [Laravel](http://laravel.com)
 
 ##TODO##
 - One server per user
+- Use Eloquent's eager loading
 - Fix assets
 - Pagination
 - User registering
 - Votifier
 - Stop using flash sessions
 - Ajax-ing
-
