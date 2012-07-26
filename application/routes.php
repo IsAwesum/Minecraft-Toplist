@@ -34,21 +34,14 @@
 
 Route::get('/', function()
 {
-	return View::make('home.index');
+	$data = Website::order_by('votes', 'desc')->get();
+	return View::make('pages.servers')->with('data', $data);
 });
 
 Route::get('servers/(:any)', function($id)
 {
-
 	$data = Website::find($id);
 	return View::make('pages.server')->with('data', $data);
-});
-
-Route::get('servers', function()
-{
-
-	$data = Website::order_by('votes', 'desc')->get();
-	return View::make('pages.servers')->with('data', $data);
 });
 
 /*
